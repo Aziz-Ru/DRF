@@ -8,3 +8,11 @@ class Todo(models.Model):
 
     def __str__(self) -> str:
         return self.title
+
+class HighScore(models.Model):
+    created = models.DateTimeField(auto_now_add=True)
+    player_name = models.CharField(max_length=20)
+    score = models.IntegerField()
+
+    def __str__(self) -> str:
+        return self.player_name

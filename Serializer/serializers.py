@@ -1,5 +1,6 @@
 from rest_framework import serializers
 from .models import Todo
+
 class TodoSerializer(serializers.Serializer):
     title=serializers.CharField(max_length=250)
     body=serializers.CharField(max_length=250)
