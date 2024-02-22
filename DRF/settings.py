@@ -28,7 +28,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
-    'Requests'
+    'Requests',
+    'Serializer',
 ]
 
 MIDDLEWARE = [
@@ -66,8 +67,8 @@ WSGI_APPLICATION = 'DRF.wsgi.application'
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
 DATABASES = {
-    'default': {
- #### Custom Renderer classes       'ENGINE': 'django.db.backends.sqlite3',
+  'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }

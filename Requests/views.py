@@ -9,7 +9,7 @@ class Request_View(APIView):
         # print(request.data)
         # print(request.method)
         # print(request.content_type)
-        # print(request.query_params)
+        # print(request.query_params) #query_params.get('nameofit')
         return Response({'Message':request.data.get('message'),
                          'params':request.query_params,
                          'method':request.method,
