@@ -30,6 +30,8 @@ INSTALLED_APPS = [
     'rest_framework',
     'Requests',
     'Serializer',
+    'Generic',
+    'Viewset',
 ]
 
 MIDDLEWARE = [
