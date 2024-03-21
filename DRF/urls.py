@@ -8,5 +8,6 @@ urlpatterns = [
     # path('api/', include('Requests.urls')),
     # path('serializer/', include('Serializer.urls')),
     # path('generic/', include('Generic.urls')),
+    path('token/', include('TokenAuth.urls')),
     path('viewset/', include('Viewset.urls')),
 ]
