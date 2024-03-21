@@ -10,10 +10,15 @@ class Request_View(APIView):
         # print(request.method)
         # print(request.content_type)
         # print(request.query_params) #query_params.get('nameofit')
+        # http://127.0.0.1:8000/r/request/?id=1&&name=shubham
+        # print(request.auth)
+        # print(request.stream)
         return Response({'Message':request.data.get('message'),
                          'params':request.query_params,
                          'method':request.method,
                          'content_type':request.content_type,
+                         'data':request.data,
+                         'auth':request.auth,
                          },
                          status=status.HTTP_200_OK)
 
